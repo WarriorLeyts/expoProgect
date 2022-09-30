@@ -1,4 +1,4 @@
-//Вывести любой текст с помощью alert() 
+/*//Вывести любой текст с помощью alert() 
 alert("Привет, мир. Че там?");
 //Вывести что-нибудь в консоль
 console.log('//Вывести что-нибудь в консоль')
@@ -10,7 +10,7 @@ let age = '26';
 /* 
 let current-User-Name= 'Мухаммад';
 let 1age= '26';
-*/
+
 //Какой тип данных нужно использовать, чтобы задать дату формата 28.02.1999?
 let date1 = new Date(1999,1,28);
 console.log(date1);
@@ -23,13 +23,13 @@ const version = 1.5;
 console.log(version);
 /*Создать переменные name, address, phone в которых с помощью prompt() будет храниться значения имени, адреса и 
 номер телефона. Вывести в консоль текст “Студент . Адрес: , Номер телефона: ___” 
-где вместо пропусков будут соответствующие переменные.*/ 
+где вместо пропусков будут соответствующие переменные.
 let name = prompt('Введите выше имя и фамилию');
 let address = prompt('Введите свой адрес проживания');
 let phone = prompt('Введите номер телефона');
 console.log(`Студент ${name}, Адрес: ${address}, Номер телефона: ${phone}`);
 /*Создать программу, в которой две переменные - курс рубля к доллару и количество доступных рублей.
-Вывести в консоль сколько долларов можно купить на доступные рубли.*/
+Вывести в консоль сколько долларов можно купить на доступные рубли.
 let courseToDollar = 58.45;
 let summToTranslate = 500;
 let dollar = Math.trunc(summToTranslate/courseToDollar);
@@ -37,4 +37,71 @@ console.log (dollar + ' долларов');
 //Запустив следующий код, вы получите число 16. Измените вторую строку так, чтобы получить число 15.
 let a = 5, b = 10, c;
 c = ++a + --b;
-  console.log(c);   
+ console.log(c); */
+ console.log('start')
+ if (true) {
+  console.log('code')
+ }
+ console.log('end')
+ let a = 3;
+ let b = 5;
+  
+ if (a > b){
+  console.log('code');
+ } else if (a < b){
+  console.log('code else');
+ } else {
+  console.log('else');
+ }
+ let nameDate = 'Ali';
+ let passwordDate = '1234';
+ let name = prompt('login?');
+ let password = prompt('password');
+ 
+ if (nameDate === name){
+  if(passwordDate === password){
+  console.log('Welcome');
+  } else {
+    console.log('password error');
+  } 
+ } else {
+  console.log('error login');
+ }
+ if (nameDate === name && passwordDate === password){
+  console.log('Welcome')
+  } 
+  else {
+  console.log('error login');
+ }
+
+ let aa = 2;
+ let bb = 3;
+ let result = aa > 1? 'aa':'bb'
+ console.log(result);
+ let code = 'js'
+ switch(code){
+   case ('html'):
+   console.log('html');
+   break;
+   case ('css'):
+   console.log('css');
+   break;
+   case ('js'):
+   console.log('js');
+   break;
+  case ('react'):
+   console.log('react');
+   break;
+   default:
+    console.log('default');
+ }
+ /*1. Создать константу с любым числовым значением. 
+ Если значение константы меньше 10, то вывести в консоль текст “константа меньше 10”, 
+ иначе вывести “константа не меньше 10”*/
+ const toTen = 20;
+  if (toTen < 10){
+  console.log('константа меньше 10')
+ } else {
+  console.log('константа не меньше 10')
+ }
+ 
