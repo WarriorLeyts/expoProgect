@@ -273,7 +273,7 @@ number.forEach(function(item, index, array) {
 console.log(number);
 //7) Удалите элементы из массива по середине. Замените элементы массива
 
-number.splice(Math.trunc(number.length/2),(Math.trunc(number.length/2)-1));
+number.splice(Math.trunc(number.length/2),(Math.trunc(number.length/2)-1),'Замена вместо 6');
 console.log(number);
 
 
