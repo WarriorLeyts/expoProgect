@@ -240,6 +240,41 @@ const man ={
  user[userAdd] = prompt(`Пишите ${userAdd}`);
 console.log(user)*/
 
+/*1) Дан массив let a = ['lorem', 123, true, 'ipsum'];
+ Вывести длинну массива.*/
+ let a = ['lorem', 123, true, 'ipsum'];
+ console.log(a.length);
+ /*
+  2) Для того же массива выведите первый элемент и последний элемент 
+  (с учетом того, что количество элементов может меняться, а ваш код должен всегда работать)*/
+ console.log(`Первый элемент ${a[0]}, Последний элемент ${a[a.length-1]}`);
+ /*
+ 3) Дан пусто массив let em = []; Заполните его 5-ю различными элементами. Используйте методы для работы с массивами*/
+ let em = [];
+ em.push(true); 
+ em.unshift(251);
+ em.push('Имя');
+ em.unshift(100);
+ em.push('Солнце');
+ //4) Добавьте в начало предыдущего массива 3 новых элемента
+ em.unshift('первый','второй','третий');
+ //5) Удалите один элемент с начала массива и два элемента с конца
+em.splice(0,1);
+em.splice(-2);
+console.log(em);
+//6) Дан массив с нечетными числами let number = [1, 3, 5, 7, 9]. Выведите консоль все элементы сделав их четными
+
+let number = [1, 3, 5, 7, 9];
+
+number.forEach(function(item, index, array) {
+  return array[index] = item + 1;
+});
+console.log(number);
+//7) Удалите элементы из массива по середине. Замените элементы массива
+
+number.splice(Math.trunc(number.length/2),(Math.trunc(number.length/2)-1),'Замена вместо 6');
+console.log(number);
+
 
 
 
